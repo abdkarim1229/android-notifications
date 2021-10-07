@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInstance {
-
+    private val base_url = "192.168.212.173"
     companion object {
         private val retrofit by lazy {
             Retrofit.Builder()
