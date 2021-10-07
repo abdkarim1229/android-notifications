@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
             edt_token.setText(FirebaseMessage.token)
         }
         FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
-
         btn_push.setOnClickListener {
             val title = edt_title.text.toString()
             val message = edt_msg.text.toString()
